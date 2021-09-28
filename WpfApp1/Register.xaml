@@ -9,7 +9,7 @@
         Title="Register" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="D:\University\Person-computer\Lab1\WpfApp1\milky-way-with-a-large-number-of-stars-in-the-night-dark-blue-sky_118086-3774.jpg"></ImageBrush>
+            <ImageBrush ImageSource="C:\Users\user\Source\Repos\Lab1_Prson-machine\WpfApp1\milky-way-with-a-large-number-of-stars-in-the-night-dark-blue-sky_118086-3774.jpg"></ImageBrush>
         </Grid.Background>
         <Border MinWidth="400" Margin="15" Background="white" Opacity="0.7" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
             <Border.Effect>

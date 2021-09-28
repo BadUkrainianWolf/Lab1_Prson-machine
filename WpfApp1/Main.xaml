@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp1.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Main" Height="700" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\user\Source\Repos\Lab1_Prson-machine\WpfApp1\milky-way-with-a-large-number-of-stars-in-the-night-dark-blue-sky_118086-3774.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button Background="Transparent" Height="75">
+                            <Image Source="C:\Users\user\source\repos\Lab1_Prson-machine\glavnaya.png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="0.4"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
+                    
+                </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+            
+    </Grid>
+</Window>
