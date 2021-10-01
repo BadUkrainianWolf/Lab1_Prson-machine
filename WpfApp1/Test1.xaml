@@ -95,15 +95,15 @@
 
             </Grid>
             <Grid Grid.Row="1">
-                <Border Margin="20 0 20 75" Background="white" Opacity="0.6" >
+                <Border Margin="20,0,20,40" Background="white" Opacity="0.6" >
                     <StackPanel>
                         <Grid>
                             <Grid.RowDefinitions>
-                            <RowDefinition Height="50"/>
-                            <RowDefinition />
-                            <RowDefinition />
-                            <RowDefinition />
-                            <RowDefinition Height="*"/>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="200"/>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="5"/>
+                                <RowDefinition Height="100"/>
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
                                 <Grid.ColumnDefinitions>
@@ -119,6 +119,58 @@
                                 </Grid>
                                 <Grid Grid.Column="1">
                                     <TextBlock Text="75" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 0 5 0">
+                                        <Image Height="40" Margin="0 0 5 0" Source="D:\University\Person-computer\Lab1\WpfApp1\free-icon-heart-833472.png"/>
+                                        <Image Height="40" Margin="0 0 5 0" Source="D:\University\Person-computer\Lab1\WpfApp1\free-icon-heart-833472.png"/>
+                                        <Image Name="heart" Height="40" Source="D:\University\Person-computer\Lab1\WpfApp1\kisspng-heart-computer-icons-love-heart-shaped-cloud-5ade906ac71011.5554568715245354028154.png"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="В каком созвездии находится Сириус?" FontSize="23"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Border Name="Wrong" Margin="5,0,5,0" Background="LightGray" Opacity="0.6">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Button Content="Гончие псы" Background="Transparent" Foreground="Black" FontSize="20" FontWeight="DemiBold" Height="100" Width="220" BorderBrush="Transparent" BorderThickness="0" Click="Button_Click"></Button>
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Border Margin="5,0,5,0" Background="LightGray" Opacity="0.6">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                            <Button Content="Волосы Вероники" Background="Transparent" Foreground="Black" FontSize="20" FontWeight="DemiBold" Height="100" Width="220" BorderBrush="Transparent" BorderThickness="0"></Button>
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Border Name="Right" Margin="5,0,5,0" Background="LightGray" Opacity="0.6" >
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Button Content="Орион" Background="Transparent" Foreground="Black" FontSize="20" FontWeight="DemiBold" Height="100" Width="220" BorderBrush="Transparent" BorderThickness="0" Click="Button_Click_1"></Button>
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Border Margin="5,0,5,0" Background="LightGray" Opacity="0.6" >
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Button Content="Большая медведица" Background="Transparent" Foreground="Black" FontSize="20" FontWeight="DemiBold" Height="100" Width="220" BorderBrush="Transparent" BorderThickness="0"></Button>
+                                        </StackPanel>
+                                    </Border>
                                 </Grid>
                             </Grid>
                         </Grid>

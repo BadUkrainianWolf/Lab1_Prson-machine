@@ -33,5 +33,16 @@ namespace WpfApp1
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Wrong.Background = new SolidColorBrush(Colors.Red);
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Right.Background = new SolidColorBrush(Colors.Green);
+        }
     }
 }
