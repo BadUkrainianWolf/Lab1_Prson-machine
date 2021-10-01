@@ -6,14 +6,15 @@
         xmlns:local="clr-namespace:WpfApp1"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Main" Height="700" Width="600">
+        Title="Main" Height="600" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\user\Source\Repos\Lab1_Prson-machine\WpfApp1\milky-way-with-a-large-number-of-stars-in-the-night-dark-blue-sky_118086-3774.jpg"></ImageBrush>
+            <ImageBrush ImageSource="D:\University\Person-computer\Lab1\WpfApp1\milky-way-with-a-large-number-of-stars-in-the-night-dark-blue-sky_118086-3774.jpg"></ImageBrush>
         </Grid.Background>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
+                <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
@@ -26,8 +27,8 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                    <Button Background="Transparent" Height="75">
-                            <Image Source="C:\Users\user\source\repos\Lab1_Prson-machine\glavnaya.png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
+                        <Button Background="Transparent" Height="75" BorderBrush="Transparent" BorderThickness="0" Cursor="Arrow">
+                            <Image Source="D:\University\Person-computer\Lab1\WpfApp1\pngwing.com (2).png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -43,10 +44,89 @@
                 </Grid>
                 <Grid Grid.Column="1">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                        
+                        <Button Background="Transparent" Height="75" BorderBrush="Transparent" BorderThickness="0">
+                            <Image Source="D:\University\Person-computer\Lab1\WpfApp1\pngwing.com.png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.4"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                        </Button>
+                        <Button Background="Transparent" Height="75"  BorderBrush="Transparent" BorderThickness="0">
+                            <Image Source="D:\University\Person-computer\Lab1\WpfApp1\icons8-дверь-открыта-40.png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
+
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.4"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                        </Button>
                     </StackPanel>
                 </Grid>
             </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border MinWidth="300" Margin="15" Background="white" Opacity="0.7" VerticalAlignment="Center" MaxWidth="550" CornerRadius="20" Height="60">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="30" Color="#504361" ShadowDepth="0"/>
+                        </Border.Effect>
+
+                        <Button Content="Личный кабинет" Foreground="DarkBlue" FontSize="30" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Click="Button_Cab_Click"></Button>
+                        
+                    </Border>
+                    
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border MinWidth="300" Margin="15" Background="white" Opacity="0.7" VerticalAlignment="Center" MaxWidth="550" CornerRadius="20" Height="60">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="30" Color="#504361" ShadowDepth="0"/>
+                        </Border.Effect>
+
+                        <Button Content="Пройти урок" Foreground="DarkBlue" FontSize="30" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Click="Button_Lesson_Click"></Button>
+
+                    </Border>
+
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border MinWidth="300" Margin="15" Background="white" Opacity="0.7" VerticalAlignment="Center" MaxWidth="550" CornerRadius="20" Height="60">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="30" Color="#504361" ShadowDepth="0"/>
+                        </Border.Effect>
+
+                        <Button Content="Тестирование" Foreground="DarkBlue" FontSize="30" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Click="Button_Test_Click"></Button>
+
+                    </Border>
+
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border MinWidth="300" Margin="15" Background="white" Opacity="0.7" VerticalAlignment="Center" MaxWidth="550" CornerRadius="20" Height="60">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="30" Color="#504361" ShadowDepth="0"/>
+                        </Border.Effect>
+
+                        <Button Content="Справка" Foreground="DarkBlue" FontSize="30" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Click="Button_Spravka_Click"></Button>
+
+                    </Border>
+
+                </StackPanel>
+            </Grid>
+
         </Grid>
             
     </Grid>

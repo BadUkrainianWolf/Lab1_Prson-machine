@@ -23,5 +23,25 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Cab_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Lesson_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Test_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Spravka_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
