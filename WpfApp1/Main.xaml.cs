@@ -31,17 +31,28 @@ namespace WpfApp1
 
         private void Button_Lesson_Click(object sender, RoutedEventArgs e)
         {
-
+            var m = new Lessons();
+            m.Show();
+            this.Close();
         }
 
         private void Button_Test_Click(object sender, RoutedEventArgs e)
         {
-
+            var m = new Test_Main();
+            m.Show();
+            this.Close();
         }
 
         private void Button_Spravka_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var m = new MainWindow();
+            m.Show();
+            this.Close();
         }
     }
 }

@@ -24,7 +24,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                        <Button Background="Transparent" Height="75" BorderBrush="Transparent" BorderThickness="0">
+                        <Button Background="Transparent" Height="75" BorderBrush="Transparent" BorderThickness="0" Click="Button_Click">
                             <Image Source="D:\University\Person-computer\Lab1\WpfApp1\pngwing.com (2).png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
                                 <Image.RenderTransform>
                                     <TransformGroup>
@@ -48,7 +48,7 @@
                          0,15,
                          70,15
                          85,40
-                         70,65"/>
+                         70,65" HorizontalAlignment="Left" Width="85"/>
                             <TextBlock Text="Пройти урок" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 7 0" Foreground="DarkBlue" FontSize="11" FontWeight="Bold"></TextBlock>
                         </Grid>
 
@@ -68,7 +68,7 @@
                                 </Image.RenderTransform>
                             </Image>
                         </Button>
-                        <Button Background="Transparent" Height="75"  BorderBrush="Transparent" BorderThickness="0">
+                        <Button Background="Transparent" Height="75"  BorderBrush="Transparent" BorderThickness="0" Click="Button_Click_1" Cursor="Hand">
                             <Image Source="D:\University\Person-computer\Lab1\WpfApp1\icons8-дверь-открыта-40.png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
 
                                 <Image.RenderTransform>
@@ -86,7 +86,7 @@
             </Grid>
             <Grid Grid.Row="1">
                 <Border Width="500" Margin="15" Background="white" VerticalAlignment="Center" Height="470" Opacity="0.6">
-                    <ListView x:Name="listOfTasks" MouseDoubleClick="listOfTasks_MouseDoubleClick"/>
+                    <ListView x:Name="listOfTasks"/>
                 </Border>
             </Grid>
         </Grid>

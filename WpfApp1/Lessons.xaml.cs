@@ -23,5 +23,24 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Polygon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var m = new Main();
+            m.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var m = new MainWindow();
+            m.Show();
+            this.Close();
+        }
     }
 }

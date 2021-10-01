@@ -28,7 +28,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                        <Button Background="Transparent" Height="75" BorderBrush="Transparent" BorderThickness="0">
+                        <Button Background="Transparent" Height="75" BorderBrush="Transparent" BorderThickness="0" Click="Button_Click">
                             <Image Source="D:\University\Person-computer\Lab1\WpfApp1\pngwing.com (2).png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
                                 <Image.RenderTransform>
                                     <TransformGroup>
@@ -72,7 +72,7 @@
                                 </Image.RenderTransform>
                             </Image>
                         </Button>
-                        <Button Background="Transparent" Height="75"  BorderBrush="Transparent" BorderThickness="0">
+                        <Button Background="Transparent" Height="75"  BorderBrush="Transparent" BorderThickness="0" Click="Button_Click_1">
                             <Image Source="D:\University\Person-computer\Lab1\WpfApp1\icons8-дверь-открыта-40.png" RenderTransformOrigin="0.5,0.5" Height="63" Width="59">
 
                                 <Image.RenderTransform>

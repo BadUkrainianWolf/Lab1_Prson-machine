@@ -24,5 +24,19 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var m = new Register();
+            m.Show();
+            Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var m = new Main();
+            m.Show();
+            this.Close();
+        }
     }
 }

@@ -33,5 +33,26 @@ namespace WpfApp1
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var m = new Main();
+            m.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var m = new MainWindow();
+            m.Show();
+            this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var m = new Test_Main();
+            m.Show();
+            this.Close();
+        }
     }
 }
